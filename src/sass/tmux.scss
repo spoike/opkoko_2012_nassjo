@@ -1,0 +1,35 @@
+@import "impress";
+
+$fweight: 700;
+$bweight: 900;
+$font: 'Source Sans Pro', Arial, sans-serif;
+
+.tmux {
+	font-family: $font;
+	.step {
+		width:300px;
+	}
+
+	.slide {
+		width: 300px;
+		padding: 20px;
+	}
+	
+	p {
+		font-size: 45px;
+		line-height: 1em;
+	}
+	
+	h1 {
+		font-family: Consolas,monospace;
+		font-size:120px;
+		line-height:1em;
+	}
+	h1 .sub {
+		font-family: $font;
+		font-weight: $bweight;
+		font-size:53px;
+		line-height:1em;
+	}
+	
+}
