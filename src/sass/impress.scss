@@ -14,10 +14,13 @@ body {
 	@include box-sizing(border-box);
 	font-size: 48px;
 	line-height: 1.5em;
+	
+	opacity: 0.3;
+	@include transition(opacity 1s);
 }
 
 .slide {
-	display: block;
+	display: table;
 	
 	width: 900px;
 	height: 700px;
@@ -36,3 +39,5 @@ body {
 .slide p {
 	padding-bottom: 1em;
 }
+
+.step.active { opacity: 1; }

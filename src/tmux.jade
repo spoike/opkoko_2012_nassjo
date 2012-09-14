@@ -1,19 +1,38 @@
 extends layouts/impress
 
 block append head
-  link(rel='stylesheet',type='text/css',href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900')
+  link(rel='stylesheet',type='text/css',href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900,700italic')
   link(rel='stylesheet',type='text/css',href='css/tmux.css')
 
 block append content
   div.fallback-message
   div#impress.tmux
-    #bored.step.slide(data-x='-350',data-y='-1500')
-      h1
-        | tmux
-        .sub för nyfikna
-    div.step.slide(data-x='0', data-y='-1500')
-      p Each command in tmux starts with this
-      p
-        kbd ctrl
-        |  + 
-        kbd b
+    .step.slide(data-x='-700',data-y='-1500')
+      .center
+        h1
+          | tmux
+          .sub för nyfikna
+    .step.slide(data-x='-350',data-y='-1500')
+      p.center Anyone here have used GNU <code>screen</code>?
+    .step.slide(data-x='0',data-y='-1500')
+      .center
+    .step.slide(data-x='350',data-y='-1500')
+      .center
+        p Each command in tmux starts with this
+        p
+          kbd ctrl
+          |  + 
+          kbd b
+        p followed by another key
+    .step.slide(data-x='700',data-y='-1500')
+      .center
+        p For example like this:
+        p
+          kbd ctrl
+          |  + 
+          kbd b
+          |  , 
+          kbd ?
+        p 
+          | which shows the 
+          em list of commands (cheatsheet)
