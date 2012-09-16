@@ -1,5 +1,11 @@
 @import "compass";
 
+$fweight: 700;
+$bweight: 900;
+$font: 'Source Sans Pro', Arial, sans-serif;
+$monofont: 'Consolas', monospace;
+$accentcol: darken(#e15, 2%);
+
 body {
 	@include background(linear-gradient(#eee, #aaa), #aaa) ;
 	background-repeat: no-repeat;

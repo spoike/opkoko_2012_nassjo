@@ -1,0 +1,15 @@
+extends layouts/impress
+
+block append head
+  link(rel='stylesheet',type='text/css',href='css/weinre.css')
+
+block append content
+  div.fallback-message
+  div#impress.weinre
+    .step.slide(data-x='-700',data-y='-1500')
+      .center
+        h1(style='text-align:center;')
+          | tmux
+          .sub for curious
+    .step.slide(data-x='-300',data-y='-1500')
+      p.center Anyone here have used GNU <code>screen</code>?
