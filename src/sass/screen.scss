@@ -16,7 +16,7 @@ $font: 'Source Sans Pro', Arial, sans-serif;
 
 body {
 	font-family: $font;
-	@include background(linear-gradient(#eee, #aaa), #aaa) ;
+	@include background(linear-gradient(#aaa, #eee), #eee) ;
 	background-repeat: no-repeat;
 }
 
@@ -24,6 +24,8 @@ h1 {
 	font-size: 40pt;
 	margin-bottom: 0.4em;
 	font-width: $bweight;
+	color: white;
+	@include text-shadow(4px 4px 6px rgba(0,0,0,0.4))
 }
 
 h2 {
@@ -31,6 +33,8 @@ h2 {
 	margin-bottom: 0.75em;
 	font-width: $bweight;
 	font-style: italic;
+	color: white;
+	@include text-shadow(4px 4px 2px rgba(0,0,0,0.4))
 }
 
 p {
