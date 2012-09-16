@@ -4,4 +4,47 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass";
 
+$fweight: 700;
+$bweight: 900;
+$font: 'Source Sans Pro', Arial, sans-serif;
+
+#content {
+	padding: 20px;
+}
+
+body {
+	font-family: $font;
+	@include background(linear-gradient(#eee, #aaa), #aaa) ;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	font-size: 40pt;
+	margin-bottom: 0.4em;
+	font-width: $bweight;
+}
+
+h2 {
+	font-size: 32pt;
+	margin-bottom: 0.75em;
+	font-width: $bweight;
+	font-style: italic;
+}
+
+p {
+	margin-bottom: 0.75em;
+	font-size: 20pt;
+	font-width: $fweight;
+}
+
+li {
+	margin-bottom: 0.5em;
+	font-size: 20pt;
+	font-width: $fweight;
+}
+
+a, a:visited {
+	color: lighten(#16e, 1%);
+}
