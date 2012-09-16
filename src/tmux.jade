@@ -9,88 +9,215 @@ block append content
   div#impress.tmux
     .step.slide(data-x='-700',data-y='-1500')
       .center
-        h1
+        h1(style='text-align:center;')
           | tmux
-          .sub för nyfikna
-    .step.slide(data-x='-350',data-y='-1500')
+          .sub for curious
+    .step.slide(data-x='-300',data-y='-1500')
       p.center Anyone here have used GNU <code>screen</code>?
-    .step.slide(data-x='0',data-y='-1500')
+    .step.slide(data-x='100',data-y='-1500')
       .center
-        p tmux = <br/>
-        <strong>T</strong>erminal <strong>Mu</strong>ltiple<strong>x</strong>er
+        p <code>tmux</code> =
+          | <strong>T</strong>erminal <strong>Mu</strong>ltiple<strong>x</strong>er
     .step.slide(data-x='-700',data-y='-750')
       .center
         img(src='../src/images/overview.png')
-    .step.slide(data-x='-350',data-y='-750')
+    .step.slide(data-x='-300',data-y='-750')
       .center
-        h2 How to install
+        h2 How to <strong>install</strong>
         p Use your favorite <strong>package manager</strong>
         p.sub The package should be there under "<code>tmux</code>"
-    .step.slide(data-x='0',data-y='-750')
+    .step.slide(data-x='100',data-y='-750')
       .center
-        h2 How to start
-        p.term &gt; tmux <br />&nbsp;
-        p Starts a new session, with one window and one pane
+        h2 How to <strong>start</strong>
+        p.term &gt; tmux
+        p Starts a <br/>new session, with <br/>one window and <br/>one pane.
     .step.slide(data-x='-700',data-y='0')
       .center
         p Each command in tmux <strong>starts</strong> with this
         p
           kbd ctrl
           |  + 
-          kbd b
+          kbd B
         p followed by another key
-    .step.slide(data-x='-350',data-y='0')
+    .step.slide(data-x='-300',data-y='0')
       .center
         p For example like this:
         p
           kbd ctrl
           |  + 
-          kbd b
+          kbd B
           |  , 
           kbd ?
-        p 
+        p
           | which shows the 
-          em list of commands (cheatsheet)
+          em list of commands 
+        p.sub (or <strong>cheatsheet</strong> as lazy students call it)
     .step.slide(data-x='-700',data-y='750')
       .center
         h2.section Panes
         p(style='text-align:center;width:100%')
           img(src='../src/images/panes.png')
-    .step.slide(data-x='-350',data-y='750')
+    .step.slide(data-x='-300',data-y='750')
       .center
         h2 <strong>Split</strong> panes
-        p Creates new panes by splitting horizontally or vertically
-        p
+        p Creates new panes by splitting them
+        p Horizontally <br/>
           kbd ctrl
           |  + 
-          kbd b
-          |  , 
-          kbd %
-        p
-          kbd ctrl
-          |  + 
-          kbd b
+          kbd B
           |  , 
           kbd "
-    .step.slide(data-x='0',data-y='750')
+        p Vertically <br/>
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd %
+    .step.slide(data-x='100',data-y='750')
       .center 
         h2 <strong>Switch</strong> panes
         p
           kbd ctrl
           |  + 
-          kbd b
+          kbd B
           |  , arrow keys
         p.sub Repeat with arrow keys for ultimate <strong>focus</strong> combo
-    .step.slide(data-x='350',data-y='750')
+    .step.slide(data-x='500',data-y='750')
       .center
         h2 <strong>Resize</strong> panes
         p.sub Place thy focus on the pane that you want resized, followed by the following incantation
         p
           kbd ctrl
           |  + 
-          kbd b
+          kbd B
           |  , 
           kbd alt
           |  + arrow keys
         p.sub Also repeat for ultimate <strong>resize</strong> combo
+    .step.slide(data-x='700',data-y='750',data-z='-200',data-rotate-y='90')
+      .center
+        h2 Demo Time
+        p.sub So what can you do with this?
+        p <strong>#1</strong> Work in different panels such as <strong>editor</strong> in one and <strong>commandline</strong> in the other.
+    .step.slide(data-x='700',data-y='750',data-z='-600',data-rotate-y='90')
+      .center
+        p <strong>#2</strong> <code>tail</code>ing a log file
+        p.term &gt; tail -f /var/log/{logfile} <br />
+        p Quite <strong>useful</strong>, really.
+        p.sub Such as apache log files<br/>or cron job log (<code>/var/log/syslog</code>)
+    .step.slide(data-x='-700',data-y='1500')
+      .center
+        h2.section Windows
+        p(style='text-align:center;width:100%')
+          img(src='../src/images/windows.svg')
+    .step.slide(data-x='-300',data-y='1500')
+      .center
+        h2 How to <strong>Create</strong> Windows
+        p
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd C
+        p.sub <kbd>C</kbd> as in <strong>C</strong>reate. <em>OH! I GET IT!</em> Fair enough...
+    .step.slide(data-x='100',data-y='1500')
+      .center
+        h2 Window <strong>Switch</strong>ing
+        p.sub &hellip;or peeking through neighbour windows
+        p <strong>N</strong>ext Window: <br/>
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd N
+        p <strong>P</strong>revious Window <br/>
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd P
+        p By Window <strong>Index</strong><br/>
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd '
+    .step.slide(data-x='300',data-y='1500',data-z='-200',data-rotate-y='90')
+      .center
+        h2 <span style="font-size:0.5em">Suggestive</span> Demo Time
+        p.sub So what can you do with this?
+        p <strong>#3</strong> Hide some long-running processes in other windows
+    .step.slide(data-x='300',data-y='1500',data-z='-600',data-rotate-y='90')
+      .center
+        h2 Long Running Processes?
+        p.term > sudo apt-get install ...
+        p Installing packages
+        p.term > make
+        p Compiling stuff
+        p And more&hellip;
+    .step.slide(data-x='-700',data-y='2250')
+      .center
+        h2.section Sessions
+        p(style='text-align:center;width:100%')
+          img(src='../src/images/sessions.svg',width='200',height='200')
+    .step.slide(data-x='-300',data-y='2250')
+      .center
+        h2 <strong>Detach</strong> that session!
+        p
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd D
+        p Quits tmux and puts the process in the background
+        p.sub Don't worry, all the work you've done and any processes running are <strong>still there</strong>&hellip;
+    .step.slide(data-x='100',data-y='2250')
+      .center
+        h2 Go back to that session!
+        p.term > tmux ls
+        p <strong>Lists</strong> sessions
+        p.term > tmux attach [session]
+        p <strong>Attach</strong> session
+    .step.slide(data-x='300',data-y='2250',data-z='-200',data-rotate-y='90')
+      .center
+        h2 Did you know<strong>?</strong>
+        p You can log in to another's session and pair program with them
+    .step.slide(data-x='300',data-y='2250',data-z='-600',data-rotate-y='90')
+      .center
+        p Mouse-Free Development: <br/>
+          a(href="http://www.youtube.com/watch?v=JXwS7z6Dqic") Cool Youtube Video
+        p(style='text-align:center;width:100%')
+          a(href="http://pragprog.com/book/bhtmux/tmux")
+            img(src='../src/images/bhtmux_xlargecover.jpg',style="box-shadow:5px 5px 15px rgba(0,0,0,0.3)")
+    .step.slide(data-x='-700',data-y='3000')
+      .center
+        h2.section Extras
+        p I'm actually <strong>DONE</strong> here&hellip;
+    .step.slide(data-x='-300',data-y='3000')
+      .center
+        p But wait&hellip; there's more!
+    .step.slide(data-x='100',data-y='3000')
+      .center
+        h2 <strong>Scroll</strong>ing in panes
+        p There are 
+          a(href="http://superuser.com/questions/209437/how-do-i-scroll-in-tmux") settings for this 
+          | but can also be done with this:
+        p
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd [
+          |  or 
+          kbd PgUp
+        p.sub Goes into <strong>copy mode</strong> which can be scrolled with PgUp/PgDn and arrow keys. Exit the mode with <kbd>q</kbd> or <kbd>esc</kbd>
+    .step.slide(data-x='500',data-y='3000')
+      .center
+        h2 Show the <strong>time</strong>
+        p Is it <strong>T</strong>ea Time Yet?
+          kbd ctrl
+          |  + 
+          kbd B
+          |  , 
+          kbd T
         
