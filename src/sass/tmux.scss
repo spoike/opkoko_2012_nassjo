@@ -3,12 +3,14 @@
 $fweight: 700;
 $bweight: 900;
 $font: 'Source Sans Pro', Arial, sans-serif;
+$monofont: 'Consolas', monospace;
+$accentcol: darken(#e15, 2%);
 
 .tmux {
 	font-family: $font;
 	.step {
 		width:300px;
-		height:800px;
+		//height:800px;
 	}
 
 	.slide {
@@ -25,15 +27,19 @@ $font: 'Source Sans Pro', Arial, sans-serif;
 	p {
 		font-size: 35px;
 		line-height: 1em;
+		margin-bottom: 0.5em;
+		margin-top: 0;
 	}
 	
 	h1 {
-		font-family: Consolas,monospace;
-		font-size:140px;
+		font-family: $monofont;
+		font-size:135px;
 		line-height:1em;
+		color: $accentcol;
+		font-weight: $bweight;
 	}
 	code {
-		font-family: Consolas, monospace;
+		font-family: $monofont;
 		background-color: #ddd;
 	}
 	h1 .sub {
@@ -41,10 +47,45 @@ $font: 'Source Sans Pro', Arial, sans-serif;
 		font-weight: $bweight;
 		font-size:60px;
 		line-height:1em;
+		color: black;
+	}
+	h2 {
+		font-family: $font;
+		font-weight: $bweight;
+		font-size: 40px;
+		line-height: 1em;
+		width: 100%;
+		border-bottom: 1px black solid;
+		margin-bottom: 0.5em;
+	}
+	h2.section {
+		color: $accentcol;
+		font-size: 80px;
 	}
 	em {
 		font-style: italic;
 		font-weight: $fweight;
+	}
+	strong {
+		font-weight: $bweight;
+		color: $accentcol;
+	}
+	.middle {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.term {
+		background-color: lighten(#111, 25%);
+		color: darken(#fff, 5%);
+		padding: 10px;
+		font-family: $monofont;
+		font-size: 0.8em;
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
+	}
+	p.sub {
+		font-size: 20px;
+		line-height: 1em;
 	}
 	
 }
