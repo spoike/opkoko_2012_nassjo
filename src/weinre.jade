@@ -48,22 +48,27 @@ block append content
       .center
         p How does it work?
         p Add a system diagram picture here
-    .step.slide(data-x='2100', data-y='0',data-rotate-y='180',data-z='-1400')
+    .step.slide#hookup(data-x='2100', data-y='0',data-rotate-y='180',data-z='-1400')
       .center
-        p There are two ways to hook up a target
-        p Javascript tag
-        p example of javascript tag
-        p Bookmarklet
-        p A bookmark with javascript that adds the javascript tag (yo dawg)
-    .step.slide(data-x='1500',data-y='0',data-z='-700',data-rotate-y='270')
+        h2(style="font-size:50px;") There are <strong>two</strong> ways to hook up a target
+        h3 As a <code>&lt;script&gt;</code> tag
+        p <code>&lt;script type="text/javascript" src="path_to_weinre_script#unique_id"/&gt;</code>
+        h3 As a bookmarklet
+        p A bookmark with javascript that <strong>adds</strong> </br>the javascript tag <br /><em>(this sounds a lot like the yo dawg-meme)</em>
+    .step.slide#demos(data-x='1500',data-y='0',data-z='-700',data-rotate-y='270')
       .center
-        p DEMOS
-        p #1 debug.phonegap.com, add javascript tag to spoike.se
-        p #2 Run weinre (nodejs, easiest to install with npm)
-        p Step 1 Show on browser
-        p Step 2 Show on iPad with Facetime/Photobooth so everyone can see what is happening
-    .step.slide(data-x='0',data-y='0')
+        h2 <strong>Demos</strong>
+        p <strong>#1</strong> debug.phonegap.com, add javascript tag to a web page
+        p <strong>#2</strong> Run weinre and run with bookmarklet
+        p <strong>Step 1</strong> Show on browser
+        p <strong>Step 2</strong> Show on iPad <br/><span style="font-size:0.75em">(with Facetime/Photobooth so everyone can see what is happening)</span>
+    .step.slide#links(data-x='0',data-y='0')
       .center
-        p EXTRAS
-        p debug.phonegap.com (sometimes down)
-        p weinre link
+        h2 <strong>Links</strong>
+        p 
+          a(href="http://debug.phonegap.com") debug.phonegap.com
+        p 
+          a(href="http://people.apache.org/~pmuellr/weinre/") Web Inspector Remote &mdash; <code>weinre</code>
+        p.sub weinre is part of the 
+          a(href="http://incubator.apache.org/cordova/") Apache Cordova 
+          | project

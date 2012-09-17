@@ -70,7 +70,29 @@
 	}
 	code {
 		display: inline;
-		font-family: 'Consolas', monospace;
+		font-family: $monofont;
 		background-color: #ddd;
         }
+	#links p {
+		margin: 0;
+	}
+	#hookup p {
+		font-size: 30px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	#demos p {
+		font-size: 30px;
+		line-height: 1.2;
+		margin: 0;
+	}
+	h3 {
+		font-size: 35px;
+		line-height: 1.2em;
+		padding-bottom: 0.5em;
+		font-weight: $bweight;
+        }
+	p {
+		font-weight: $fweight;
+	}
 }
