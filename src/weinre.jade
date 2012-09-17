@@ -9,37 +9,41 @@ block append content
     .step.slide(data-x='0',data-y='-2250')
       .center
         h1(style='text-align:center;')
-          | Inspect THIS
+          | Inspect <strong>THIS!</strong>
           .sub Web Inspecting on Mobile Devices
     .step.slide(data-x='0',data-y='-1500')
-      p.center Hey
+      #hey Hey!
     .step.slide(data-x='1050',data-y='-1500')
       .center
-        p Inspecting webpages is RAD right?
-        p lolwhut?
+        .big Inspecting webpages is 
+        .bigger(style="font-size:200px") <strong>RAD</strong> 
+        .big &hellip;right?
     .step.slide(data-x='1800',data-y='-1500',data-z='-700',data-rotate-y='90')
       .center
-        p Screenshot of Chrome Dev Tools
-        p HTML/CSS and DOM Manipulation
+        h2(style="font-size:2em;") HTML/CSS and DOM Manipulation
+        img(src="../src/images/inspect_html.png",style="width:60%;position:relative;top:-40px;")
     .step.slide(data-x='1800',data-y='-1500',data-z='-1750',data-rotate-y='90')
-      .center
-        p Screenshot of Chrome Dev Tools
-        p Javascript Debugging
+      .center(style="position:relative;")
+        h2 Javascript Debugging
+        img(src="../src/images/inspect_js.png",style="position:relative;top:-40px;width:60%;")
     .step.slide(data-x='0',data-y='-750')
       .center
-        p What about mobile, that would be RAD right?
-    .step.slide(data-x='1050',data-y='-750')
+        p What about <strong>mobile</strong>?
+        p That would be <strong>RAD</strong>, right?
+    .step#despairphone(data-x='1050',data-y='-750')
       .center
-        p Not built in! FAIL!
-        p Picture of something cute Despairing
+        p.big Not built in! 
+        p.bigger <strong>FAIL!</strong>
     .step.slide(data-x='2100',data-y='-750')
       .center
-        p I wish I could remote control a web page
+         p I wish I could <br />
+           strong remote control
+           | <br />a web page
     .step.slide(data-x='2100',data-y='0')
       .center
-        p Guess what, somebody did!
-        p WEINRE &mdash; To The Rescue
-        p (Currently written in NodeJS, subject to change&hellip; a lot)
+        p Guess what, someone did!
+        p <strong><code>WEINRE</code></strong> &mdash; To The Rescue
+        p.sub <strong>WE</strong>b <strong>IN</strong>spector <strong>RE</strong>mote &mdash; Currently written in NodeJS, subject to change&hellip; a lot
     .step.slide(data-x='2900',data-y='0',data-rotate-y='90',data-z='-700')
       .center
         p How does it work?
