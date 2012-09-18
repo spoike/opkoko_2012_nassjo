@@ -1,0 +1,136 @@
+/* line 9, ../../src/sass/impress.scss */
+body {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #aaaaaa)), #aaaaaa;
+  background: -webkit-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: -moz-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: -o-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background-repeat: no-repeat;
+  min-height: 450px; }
+
+/* line 15, ../../src/sass/impress.scss */
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 48px;
+  line-height: 1.5em;
+  opacity: 0.3;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+/* line 28, ../../src/sass/impress.scss */
+.slide {
+  display: table;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px; }
+
+/* line 45, ../../src/sass/impress.scss */
+.slide p {
+  padding-bottom: 1em; }
+
+/* line 49, ../../src/sass/impress.scss */
+.step.active {
+  opacity: 1; }
+
+/* line 51, ../../src/sass/impress.scss */
+a, a:visited {
+  color: #16e; }
+
+/* line 55, ../../src/sass/impress.scss */
+h2 {
+  color: black;
+  font-style: normal; }
+
+/* line 3, ../../src/sass/sassy.scss */
+.sassy {
+  font-family: "Source Sans Pro", Arial, sans-serif; }
+  /* line 6, ../../src/sass/sassy.scss */
+  .sassy .slide {
+    padding: 0;
+    width: 800px;
+    height: 600px; }
+  /* line 11, ../../src/sass/sassy.scss */
+  .sassy .center, .sassy .middle {
+    display: table-cell;
+    width: 100%;
+    height: 100%; }
+  /* line 16, ../../src/sass/sassy.scss */
+  .sassy .center {
+    text-align: center; }
+  /* line 19, ../../src/sass/sassy.scss */
+  .sassy .middle {
+    vertical-align: middle; }
+  /* line 22, ../../src/sass/sassy.scss */
+  .sassy h2 {
+    border-bottom: black 1px solid; }
+  /* line 25, ../../src/sass/sassy.scss */
+  .sassy #first {
+    font-size: 180px;
+    line-height: 1.2em; }
+    /* line 28, ../../src/sass/sassy.scss */
+    .sassy #first p {
+      text-shadow: 5px 5px 0px rgba(0, 50, 80, 0.5); }
+    /* line 31, ../../src/sass/sassy.scss */
+    .sassy #first .thesassy {
+      font-size: 100px;
+      line-height: 1em; }
+    /* line 35, ../../src/sass/sassy.scss */
+    .sassy #first .of {
+      font-size: 70px;
+      line-height: 1em;
+      margin: 0; }
+    /* line 40, ../../src/sass/sassy.scss */
+    .sassy #first .preprocessors {
+      font-size: 140px;
+      line-height: 1em; }
+  /* line 45, ../../src/sass/sassy.scss */
+  .sassy strong {
+    color: #e41052; }
+  /* line 48, ../../src/sass/sassy.scss */
+  .sassy p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 32px;
+    line-height: 1.2em;
+    padding: 0; }
+  /* line 55, ../../src/sass/sassy.scss */
+  .sassy .will-fade {
+    transition: opacity 1s;
+    opacity: 0; }
+  /* line 59, ../../src/sass/sassy.scss */
+  .sassy .do-fade {
+    opacity: 1; }
+  /* line 63, ../../src/sass/sassy.scss */
+  .sassy #cssright p {
+    font-size: 128px;
+    padding: 0;
+    margin: 0;
+    line-height: 1em; }
+  /* line 68, ../../src/sass/sassy.scss */
+  .sassy #cssright p.will-fade {
+    font-size: 64px; }
+  /* line 72, ../../src/sass/sassy.scss */
+  .sassy pre {
+    white-space: pre;
+    font-family: "Consolas", monospace;
+    line-height: 1.1em;
+    padding: 20px; }
+  /* line 78, ../../src/sass/sassy.scss */
+  .sassy .syntaxhighlighter {
+    font-size: 24px !important; }

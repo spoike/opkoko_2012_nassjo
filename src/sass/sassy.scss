@@ -4,7 +4,7 @@
 	$shadowcol: rgba(0,50,80,0.5);
 	font-family: $font;
 	.slide {
-		padding: 20px;
+		padding: 0;
 		width: 800px;
 		height: 600px;
 	}
@@ -23,7 +23,6 @@
 		border-bottom: black 1px solid;
 	}
 	#first {
-		padding-top: 80px;
 		font-size: 180px;
 		line-height: 1.2em;
 		p {
@@ -35,7 +34,7 @@
 		}
 		.of {
 			font-size: 70px;
-			line-height: 0.8em;
+			line-height: 1em;
 			margin: 0;
 		}
 		.preprocessors {
@@ -52,5 +51,31 @@
 		font-size: 32px;
 		line-height: 1.2em;
 		padding: 0;
+	}
+	.will-fade {
+		transition: opacity 1s;
+		opacity: 0;
+	}
+	.do-fade {
+		opacity: 1;
+	}
+	#cssright {
+		p {
+			font-size: 128px;
+			padding: 0; margin: 0;
+			line-height: 1em;
+		}
+		p.will-fade {
+			font-size: 64px;
+		}
+	}
+	pre {
+		white-space: pre;
+		font-family: $monofont;
+		line-height: 1.1em;
+		padding: 20px;
+	}
+	.syntaxhighlighter {
+		font-size: 24px !important;
 	}
 }

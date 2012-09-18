@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OPKOKO 2012 Nässjö</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charsetUTF-8>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900,700italic">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/keys.css">
+    <link rel="stylesheet" type="text/css" href="css/sassy.css">
+  </head>
+  <body class="impress-not-supported">
+    <div id="content">
+      <div class="fallback-message"></div>
+      <div id="impress" class="sassy">
+        <div id="first" data-x="-1000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <p class="thesassy">The Sassy <strong>World </strong></p>
+            <p class="of">of </p>
+            <p class="preprocessors"> <strong>Preprocessors</strong></p>
+          </div>
+        </div>
+        <div id="cssright" data-x="0" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <p><strong>C</strong>ascading </p>
+            <p><strong>S</strong>tyle </p>
+            <p><strong>S</strong>heets</p>
+            <p data-jmpress="fade">Lets check out some <strong>code</strong> </p>
+          </div>
+        </div>
+        <div id="step1" data-x="1000" data-y="-1500" class="step slide">
+          <div class="center">
+            <pre class="brush: sass">#cssrules {
+    font-size: 20pt;
+}
+div.content {
+    font-size: 10pt;
+    background-color: #bada55;
+    margin: 20px;
+}
+div.content pre {
+    margin: 10px;
+    text-shadow: 2px 2px 2px #333;
+}</pre>
+            <p data-jmpress="fade">That's a lot of <strong>code</strong>&hellip;</p>
+            <p data-jmpress="fade">How about we add some <strong>variables</strong>?</p>
+          </div>
+        </div>
+        <div id="step2" data-x="2000" data-y="-1500" class="step slide">
+          <div class="center">
+            <pre class="brush: sass; highlight: [5, 9]">$bgcolor: #bada55;
+$fsize: 20pt;
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: 10pt;
+    background-color: $bgcolor;
+    margin: 20px;
+}
+div.content pre {
+    margin: 10px;
+    text-shadow: 2px 2px 2px #333;
+}</pre>
+            <p data-jmpress="fade">Let's put in some <strong>arithmetic</strong></p>
+          </div>
+        </div>
+        <div id="step3" data-x="3000" data-y="-1500" class="step slide">
+          <div class="center">
+            <pre class="brush: sass; highlight: [9, 11]">$bgcolor: #bada55;
+$fsize: 20pt;
+$common_margin: 10px;
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: $fsize / 2;
+    background-color: $bgcolor;
+    margin: $common_margin * 2;
+}
+div.content pre {
+    margin: $common_margin;
+    text-shadow: 2px 2px 2px #333;
+}</pre>
+            <p data-jmpress="fade">How about some lovely <strong>nesting</strong>? </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jmpress.min.js"></script>
+    <script type="text/javascript">$('#impress').jmpress();</script>
+    <link rel="stylesheet" type="text/css" href="css/shCore.css">
+    <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushSass.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+  </body>
+</html>

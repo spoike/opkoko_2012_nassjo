@@ -1,0 +1,136 @@
+/* line 9, ../../src/sass/impress.scss */
+body {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #eeeeee), color-stop(100%, #aaaaaa)), #aaaaaa;
+  background: -webkit-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: -moz-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: -o-linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background: linear-gradient(#eeeeee, #aaaaaa), #aaaaaa;
+  background-repeat: no-repeat;
+  min-height: 450px; }
+
+/* line 15, ../../src/sass/impress.scss */
+.step {
+  position: relative;
+  width: 900px;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 48px;
+  line-height: 1.5em;
+  opacity: 0.3;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
+
+/* line 28, ../../src/sass/impress.scss */
+.slide {
+  display: table;
+  width: 900px;
+  height: 700px;
+  padding: 40px 60px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: -1px; }
+
+/* line 45, ../../src/sass/impress.scss */
+.slide p {
+  padding-bottom: 1em; }
+
+/* line 49, ../../src/sass/impress.scss */
+.step.active {
+  opacity: 1; }
+
+/* line 51, ../../src/sass/impress.scss */
+a, a:visited {
+  color: #16e; }
+
+/* line 55, ../../src/sass/impress.scss */
+h2 {
+  color: black;
+  font-style: normal; }
+
+/* line 3, ../../src/sass/tmux.scss */
+.tmux {
+  font-family: "Source Sans Pro", Arial, sans-serif; }
+  /* line 5, ../../src/sass/tmux.scss */
+  .tmux .step {
+    width: 300px; }
+  /* line 10, ../../src/sass/tmux.scss */
+  .tmux .slide {
+    padding: 20px; }
+  /* line 14, ../../src/sass/tmux.scss */
+  .tmux .center {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+  /* line 21, ../../src/sass/tmux.scss */
+  .tmux p {
+    font-size: 35px;
+    line-height: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0; }
+  /* line 28, ../../src/sass/tmux.scss */
+  .tmux h1 {
+    font-family: "Consolas", monospace;
+    font-size: 135px;
+    line-height: 1em;
+    color: #e41052;
+    font-weight: 900; }
+  /* line 35, ../../src/sass/tmux.scss */
+  .tmux code {
+    font-family: "Consolas", monospace;
+    background-color: #ddd; }
+  /* line 39, ../../src/sass/tmux.scss */
+  .tmux h1 .sub {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1em;
+    color: black; }
+  /* line 46, ../../src/sass/tmux.scss */
+  .tmux h2 {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1em;
+    width: 100%;
+    border-bottom: 1px black solid;
+    margin-bottom: 0.5em; }
+  /* line 55, ../../src/sass/tmux.scss */
+  .tmux h2.section {
+    color: #e41052;
+    font-size: 80px; }
+  /* line 59, ../../src/sass/tmux.scss */
+  .tmux em {
+    font-style: italic;
+    font-weight: 700; }
+  /* line 63, ../../src/sass/tmux.scss */
+  .tmux strong {
+    font-weight: 900;
+    color: #e41052; }
+  /* line 67, ../../src/sass/tmux.scss */
+  .tmux .middle {
+    display: table-cell;
+    vertical-align: middle; }
+  /* line 71, ../../src/sass/tmux.scss */
+  .tmux .term {
+    background-color: #515151;
+    color: #f2f2f2;
+    padding: 10px;
+    font-family: "Consolas", monospace;
+    font-size: 0.8em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em; }
+  /* line 80, ../../src/sass/tmux.scss */
+  .tmux p.sub {
+    font-size: 20px;
+    line-height: 1em; }
