@@ -1,0 +1,56 @@
+@import "impress";
+
+.sassy {
+	$shadowcol: rgba(0,50,80,0.5);
+	font-family: $font;
+	.slide {
+		padding: 20px;
+		width: 800px;
+		height: 600px;
+	}
+	.center, .middle {
+		display: table-cell;
+		width: 100%;
+		height: 100%;
+	}
+	.center {
+		text-align: center;
+	}
+	.middle {
+		vertical-align: middle;
+	}
+	h2 {
+		border-bottom: black 1px solid;
+	}
+	#first {
+		padding-top: 80px;
+		font-size: 180px;
+		line-height: 1.2em;
+		p {
+			text-shadow: 5px 5px 0px $shadowcol;
+		}
+		.thesassy {
+			font-size: 100px;
+			line-height: 1em;
+		}
+		.of {
+			font-size: 70px;
+			line-height: 0.8em;
+			margin: 0;
+		}
+		.preprocessors {
+			font-size: 140px;
+			line-height: 1em;
+		}
+	}
+	strong {
+		color: $accentcol;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+		font-size: 32px;
+		line-height: 1.2em;
+		padding: 0;
+	}
+}

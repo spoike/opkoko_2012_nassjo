@@ -1,0 +1,19 @@
+extends layouts/impress
+
+block append head
+  link(rel='stylesheet',type='text/css',href='css/sassy.css')
+
+block append content
+  .fallback-message
+  #impress.sassy
+    #first.step.slide(data-x='-1000',data-y='-1500')
+      .center
+        p.thesassy The Sassy 
+          strong World 
+        p.of of 
+        p.preprocessors 
+          strong Preprocessors
+    .step.slide(data-x='0', data-y='-1500')
+      .center
+        h2 Cascading Style Sheets
+        p Yeah yeah yeah!
