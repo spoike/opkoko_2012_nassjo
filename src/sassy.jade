@@ -139,7 +139,9 @@ block append content
           | }
     #allsteps.step.hidden.slide(data-x='3100',data-y='-400',data-z='-1',data-scale='7')
       div(style="position:relative")
-        p(style="position:absolute;top:200px;left:65px;") *.CSS
-        p(style="position:absolute;top:250px;left:40px;width:720px;text-align:center;",data-jmpress="fade") 
+        div(style="position:absolute;top:200px;left:65px;") 
+          | *.CSS
+        div(style="position:absolute;top:250px;left:40px;width:720px;text-align:center;",data-jmpress="fade") 
+          div(style="-webkit-transform: rotate(-90deg);font-size:700px;opacity:0.3;line-height:0") {
           | *.SCSS<br/>
-          img(src='../src/images/sass_logo.gif')
+          img(src='../src/images/sass_logo.gif',style="z-index:1;")
