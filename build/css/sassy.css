@@ -8,14 +8,14 @@ body {
   background-repeat: no-repeat;
   min-height: 450px; }
 
-/* line 15, ../../src/sass/impress.scss */
+/* line 27, ../../src/sass/impress.scss */
 .step {
-  position: relative;
-  width: 900px;
-  padding: 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+  width: 900px;
+  padding: 40px;
   font-size: 48px;
   line-height: 1.5em;
   opacity: 0.3;
@@ -24,7 +24,15 @@ body {
   -o-transition: opacity 1s;
   transition: opacity 1s; }
 
-/* line 28, ../../src/sass/impress.scss */
+/* line 31, ../../src/sass/impress.scss */
+.hidden {
+  opacity: 0.0; }
+
+/* line 34, ../../src/sass/impress.scss */
+.full {
+  opacity: 1.0; }
+
+/* line 38, ../../src/sass/impress.scss */
 .slide {
   display: table;
   width: 900px;
@@ -40,19 +48,19 @@ body {
   line-height: 36px;
   letter-spacing: -1px; }
 
-/* line 45, ../../src/sass/impress.scss */
+/* line 55, ../../src/sass/impress.scss */
 .slide p {
   padding-bottom: 1em; }
 
-/* line 49, ../../src/sass/impress.scss */
+/* line 59, ../../src/sass/impress.scss */
 .step.active {
   opacity: 1; }
 
-/* line 51, ../../src/sass/impress.scss */
+/* line 63, ../../src/sass/impress.scss */
 a, a:visited {
   color: #16e; }
 
-/* line 55, ../../src/sass/impress.scss */
+/* line 67, ../../src/sass/impress.scss */
 h2 {
   color: black;
   font-style: normal; }
@@ -134,3 +142,6 @@ h2 {
   /* line 78, ../../src/sass/sassy.scss */
   .sassy .syntaxhighlighter {
     font-size: 24px !important; }
+  /* line 81, ../../src/sass/sassy.scss */
+  .sassy .full {
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5); }

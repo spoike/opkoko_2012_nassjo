@@ -12,17 +12,27 @@ body {
 	min-height: 450px;
 }
 
-.step {
+@mixin common-step($opacity) {
+	@include box-sizing(border-box);
 	position: relative;
 	width: 900px;
 	padding: 40px;
-	//margin: 20px auto;
-	@include box-sizing(border-box);
 	font-size: 48px;
 	line-height: 1.5em;
 	
-	opacity: 0.3;
+	opacity: $opacity;
 	@include transition(opacity 1s);
+}
+
+.step {
+	@include common_step(0.3);
+}
+
+.hidden {
+	opacity: 0.0;
+}
+.full {
+	opacity: 1.0;
 }
 
 .slide {
@@ -46,7 +56,9 @@ body {
 	padding-bottom: 1em;
 }
 
-.step.active { opacity: 1; }
+.step.active{ 
+	opacity: 1; 
+}
 
 a, a:visited {
 	color: #16e;
