@@ -158,7 +158,10 @@ block append content
     #how.step.hidden.slide(data-x='7000',data-y='-1500')
       .center.middle
         h2 How does it all <strong>work</strong>?
-        p Add picture here that describes preprocessing SASS to CSS so that browsers will understand
+        p Browsers don't support this directly, but&hellip;
+        img(src="../src/images/sassy_process.png")
+        p(data-jmpress="fade") You can let the preprocessor <strong>watch for changes</strong>
+        p(data-jmpress="fade") Some tools also lets you <strong>live reload</strong> your <br/>browser as you hack.
     #other.step.slide(data-x='8000',data-y='-1500')
       .center.middle
         h2 What other things can be <strong>preprocessed</strong> to our advantage?
@@ -238,7 +241,7 @@ block append content
            p <a href="http://middlemanapp.com">Middleman</a> (Static Site Framework made in Ruby)
            p <a href="http://www.mindscapehq.com/products/web-workbench">Web Workbench</a> (Visual Studio extension)
            p <a href="https://github.com/xpaulbettsx/SassAndCoffee">SassAndCoffee</a> (for .NET available via NuGet)
-    #demos.step.hidden.slide(data-x="11800",data-y="-1500",data-z="-100",data-rotate-y="70",data-rotate-x="-20")
+    #demos.step.hidden.slide(data-x="11800",data-y="-1500",data-z="-100",data-rotate-y="50",data-rotate-x="-20")
       .center.middle
         q 
           strong(style="font-size:200px;") DEMOS!?
