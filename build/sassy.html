@@ -154,6 +154,13 @@ div.content {
             <div style="position:absolute;top:250px;left:40px;width:720px;text-align:center;" data-jmpress="fade"> 
               <div style="-webkit-transform: rotate(-90deg);font-size:700px;opacity:0.3;line-height:0">{</div>*.SCSS<br/><img src="../src/images/sass_logo.gif" style="z-index:1;">
             </div>
+            <div style="position:absolute;top:250px;left:130px" data-jmpress="fade">
+              <p style="color:white;font-size:48px;position:absolute;z-index:2;top:20px;left:20px;">Yo dawg!</p><img src="../src/images/xzibit-happy.jpg" style="z-index:1;" width="500">
+              <p style="color:white;font-size:24px;position:relative;z-index:2;top:-80px;left:20px;">
+                 
+                I heard you like to code, so I put some code in <br/>your CSS so you can code in your CSS
+              </p>
+            </div>
           </div>
         </div>
         <div id="how" data-x="7000" data-y="-1500" class="step hidden slide">
@@ -177,23 +184,81 @@ div.content {
         </div>
         <div id="jade-example" data-x="9000" data-y="-700" class="step slide">
           <div class="center middle">
-            <p>example Jade code</p>
+            <h2>Example <strong>Jade</strong> Code</h2>
+            <pre class="brush: css">doctype 5
+html(lang=&quot;en&quot;)
+  head
+    title= pageTitle
+    script(type='text/javascript')
+      if (foo) {
+        bar();
+      }
+  body
+    h1 Jade - node template engine
+    #container
+      if youAreUsingJade
+        p You are amazing
+      else
+        p Get on it!</pre>
+          </div>
+        </div>
+        <div id="jade-compiled" data-x="9000" data-y="-700" data-z="-1" data-rotate-y="180" class="step slide">
+          <div class="center middle">
+            <h2>Generated <strong>HTML</strong> from Jade</h2>
+            <pre class="brush: html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+  &lt;title&gt;Jade&lt;/title&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    if (foo) {
+      bar();
+    }
+  &lt;/script&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Jade - node template engine&lt;/h1&gt;
+    &lt;div id=&quot;container&quot;&gt;
+      &lt;p&gt;You are amazing&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
           </div>
         </div>
         <div id="coffee" data-x="10000" data-y="-1500" class="step slide">
           <div class="center middle">
-            <h2>Coffeescript</h2>
+            <h2>Example <strong>Coffeescript</strong> Code</h2>
             <p>Javascript replacement</p>
           </div>
         </div>
         <div id="coffee-example" data-x="10000" data-y="-700" class="step slide">
           <div class="center middle">
-            <p>example Coffeescript code</p>
+            <h2>Example <strong>CoffeeScript</strong> code</h2>
+            <pre class="brush: coffee">square = (x) -&gt; x * x
+cube = (x) -&gt; square(x) * x</pre>
+          </div>
+        </div>
+        <div id="coffee-compiled" data-x="10000" data-y="-700" data-z="-1" data-rotate-y="180" class="step slide">
+          <div class="center middle">
+            <h2>Generated <strong>Javascript</strong> from CoffeeScript</h2>
+            <pre class="brush: coffee">var cube, square;
+square = function(x) {
+  return x * x;
+}
+cube = function(x) {
+  return square(x) * x;
+};</pre>
           </div>
         </div>
         <div id="tools" data-x="11000" data-y="-1500" class="step slide">
           <div class="center middle">
             <h2>Tools</h2>
+            <div style="text-align:left;padding:0 40px 0 40px;">
+              <p>There are a lot of <strong>tools</strong> to choose from:</p>
+              <p><a href="http://incident57.com/codekit/">Codekit</a> (Mac OSX only)</p>
+              <p><a href="http://fireapp.handlino.com">Fire.app</a> (Cross-Platform)</p>
+              <p><a href="http://middlemanapp.com">Middleman</a> (Static Site Framework made in Ruby)</p>
+              <p><a href="http://www.mindscapehq.com/products/web-workbench">Web Workbench</a> (Visual Studio extension)</p>
+              <p><a href="https://github.com/xpaulbettsx/SassAndCoffee">SassAndCoffee</a> (for .NET available via NuGet)</p>
+            </div>
           </div>
         </div>
         <div id="demos" data-x="11800" data-y="-1500" data-z="-100" data-rotate-y="70" data-rotate-x="-20" class="step hidden slide">
@@ -209,6 +274,11 @@ div.content {
     <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
     <script type="text/javascript" src="js/shCore.js"></script>
     <script type="text/javascript" src="js/shBrushSass.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+    <script type="text/javascript" src="js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/shBrushCoffeeScript.js"></script>
+    <script type="text/javascript" src="js/shBrushPlain.js"></script>
+    <script type="text/javascript" src="js/shBrushCss.js"></script>
     <script type="text/javascript">SyntaxHighlighter.all();</script>
   </body>
 </html>
