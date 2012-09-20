@@ -1,9 +1,19 @@
 extends layouts/impress
 
+block append head
+  link(rel='stylesheet',type='text/css',href='css/git.css')
+
 block append content
-  div.fallback-message
-  div#impress
-    #bored.step.slide(data-x='-1000',data-y='-1500')
-      q Hey
-    div.step.slide(data-x='-80', data-y='-1500')
-      q lol
+  .fallback-message
+  #impress.git
+    .step.slide(data-x='-1000',data-y='-1500')
+      .center.middle
+        h1 <strong>GIT</strong>
+        p Coding/Version Control Lab
+    .step.slide(data-x='0', data-y='-1500')
+      .center.middle
+        h2 Tools
+        p Github for Windows/Mac &mdash; Easiest
+        p Git &mdash; Commandline Toolbox
+        p Alternatively use Mercurial (prominently used by Java/Python folks)
+        p Gitk, gitcola &mdash; Useful revision graphs
