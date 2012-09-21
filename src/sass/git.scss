@@ -3,8 +3,10 @@
 .git {
 	font-family: $font;
 	p {
-		font-size: 36pt;
+		font-size: 30px;
 		line-height: 1.2em;
+		margin: 0;
+		padding-bottom: 0.5em;
 	}
 	.slide {
 		padding: 0;
@@ -21,6 +23,16 @@
 	}
 	.middle {
 		vertical-align: middle;
+	}
+	ul {
+		width: 100%;
+		text-align: left;
+		padding: 0 20px 0 20px;
+	}
+	li {
+		display: block;
+		font-size: 30px;
+		line-height: 1.2em;
 	}
 	h1 {
 		color: $accentcol;
