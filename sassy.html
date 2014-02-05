@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OPKOKO 2012 Nässjö</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html" charsetUTF-8>
+    <!--link(rel='stylesheet',type='text/css',href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900,700italic')-->
+    <link rel="stylesheet" type="text/css" href="css/localfontface.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/keys.css">
+    <link rel="stylesheet" type="text/css" href="css/sassy.css">
+  </head>
+  <body class="impress-not-supported">
+    <div id="content">
+      <div class="fallback-message"></div>
+      <div id="impress" class="sassy">
+        <div id="first" data-x="-1000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <p class="thesassy">The Sassy <strong>World </strong></p>
+            <p class="of">of </p>
+            <p class="preprocessors"> <strong>Preprocessors</strong></p>
+          </div>
+        </div>
+        <div id="cssright" data-x="0" data-y="-1500" class="step hidden slide">
+          <div class="center middle">
+            <p><strong>C</strong>ascading </p>
+            <p><strong>S</strong>tyle </p>
+            <p><strong>S</strong>heets</p>
+            <p data-jmpress="fade">Lets check out some <strong>code</strong> </p>
+          </div>
+        </div>
+        <div id="step1" data-x="1000" data-y="-1500" class="step slide full">
+          <div class="center">
+            <pre class="brush: sass">#cssrules {
+    font-size: 20pt;
+}
+div.content {
+    font-size: 10pt;
+    background-color: #bada55;
+    margin: 20px;
+}
+div.content pre {
+    margin: 10px;
+    text-shadow: 2px 2px 2px #333;
+    border-radius 5px;
+}</pre>
+            <p data-jmpress="fade">That's a lot of <strong>double maintenance</strong> code&hellip;</p>
+            <p data-jmpress="fade">How about we add some <strong>variables</strong>?</p>
+          </div>
+        </div>
+        <div id="step2" data-x="2000" data-y="-1500" class="step slide full">
+          <div class="center">
+            <pre class="brush: sass; highlight: [5, 9]">$bgcolor: #bada55;
+$fsize: 20pt;
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: 10pt;
+    background-color: $bgcolor;
+    margin: 20px;
+}
+div.content pre {
+    margin: 10px;
+    text-shadow: 2px 2px 2px #333;
+    border-radius 5px;
+}</pre>
+            <p data-jmpress="fade">Let's put in some <strong>arithmetic</strong></p>
+          </div>
+        </div>
+        <div id="step3" data-x="3000" data-y="-1500" class="step slide full">
+          <div class="center">
+            <pre class="brush: sass; highlight: [9, 11]">$bgcolor: #bada55;
+$fsize: 20pt;
+$common_margin: 10px;
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: $fsize / 2;
+    background-color: $bgcolor;
+    margin: $common_margin * 2;
+}
+div.content pre {
+    margin: $common_margin;
+    text-shadow: 2px 2px 2px #333;
+    border-radius 5px;
+}</pre>
+            <p data-jmpress="fade">How about some lovely <strong>nesting</strong>? </p>
+          </div>
+        </div>
+        <div id="step4" data-x="4000" data-y="-1500" class="step slide full">
+          <div class="center">
+            <pre class="brush: sass; highlight: [12,13,14,15,16]">$bgcolor: #bada55;
+$fsize: 20pt;
+$common_margin: 10px;
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: $fsize / 2;
+    background-color: $bgcolor;
+    margin: $common_margin * 2;
+    pre { 
+        margin: $common_margin;
+        text-shadow: 2px 2px 2px #333;
+        border-radius 5px;
+    }
+}</pre>
+            <p data-jmpress="fade">Can we do something about prefixes for border-radius? <br />Something like a <strong>mixin</strong>? </p>
+          </div>
+        </div>
+        <div id="step5" data-x="5000" data-y="-1500" data-z="-1" data-rotate-y="180" class="step slide">
+          <div class="center middle">
+            <pre class="brush: sass;">@mixin common-border {
+  $b: 5px;
+  -webkit-border-radius: $b;
+  -moz-border-radius: $b;
+  -o-border-radius: $b;
+  border-radius: $b;
+}</pre>
+            <p><strong>Usage</strong>:</p>
+            <pre class="brush: sass;">@include common-border;</pre>
+          </div>
+        </div>
+        <div id="step6" data-x="5000" data-y="-1500" class="step slide full">
+          <div class="center">
+            <pre class="brush: sass; highlight: [13]">// variables and mixin defs...
+ 
+#cssrules {
+    font-size: $fsize;
+}
+div.content {
+    font-size: $fsize / 2;
+    background-color: $bgcolor;
+    margin: $common_margin * 2;
+    pre { 
+        margin: $common_margin;
+        text-shadow: 2px 2px 2px #333;
+        @include common-border;
+    }
+}</pre>
+          </div>
+        </div>
+        <div id="allsteps" data-x="3100" data-y="-400" data-z="-1" data-scale="7" class="step hidden slide">
+          <div style="position:relative">
+            <div style="position:absolute;top:200px;left:65px;">
+               
+              *.CSS
+            </div>
+            <div style="position:absolute;top:250px;left:40px;width:720px;text-align:center;" data-jmpress="fade"> 
+              <div style="-webkit-transform: rotate(-90deg);font-size:700px;opacity:0.3;line-height:0">{</div>*.SCSS<br/><img src="../src/images/sass_logo.gif" style="z-index:1;">
+            </div>
+            <div style="position:absolute;top:250px;left:130px" data-jmpress="fade">
+              <p style="color:white;font-size:48px;position:absolute;z-index:2;top:20px;left:20px;">Yo dawg!</p><img src="../src/images/xzibit-happy.jpg" style="z-index:1;" width="500">
+              <p style="color:white;font-size:24px;position:relative;z-index:2;top:-80px;left:20px;">
+                 
+                I heard you like to code, so I put some code in <br/>your CSS so you can code in your CSS
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="how" data-x="7000" data-y="-1500" class="step hidden slide">
+          <div class="center middle">
+            <h2>How does it all <strong>work</strong>?</h2>
+            <p>Browsers don't support this directly, but&hellip;</p><img src="../src/images/sassy_process.png">
+            <p data-jmpress="fade">You can let the preprocessor <strong>watch for changes</strong></p>
+            <p data-jmpress="fade">Some tools also lets you <strong>live reload</strong> your <br/>browser as you hack.</p>
+          </div>
+        </div>
+        <div id="other" data-x="8000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <h2>What other things can be <strong>preprocessed</strong> to our advantage?</h2>
+            <p>HTML</p>
+            <p>Javascript</p>
+          </div>
+        </div>
+        <div id="jade" data-x="9000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <h2>Jade</h2>
+            <p>HTML replacement</p>
+          </div>
+        </div>
+        <div id="jade-example" data-x="9000" data-y="-700" class="step slide">
+          <div class="center middle">
+            <h2>Example <strong>Jade</strong> Code</h2>
+            <pre class="brush: css">doctype 5
+html(lang=&quot;en&quot;)
+  head
+    title= pageTitle
+    script(type='text/javascript')
+      if (foo) {
+        bar();
+      }
+  body
+    h1 Jade - node template engine
+    #container
+      if youAreUsingJade
+        p You are amazing
+      else
+        p Get on it!</pre>
+          </div>
+        </div>
+        <div id="jade-compiled" data-x="9000" data-y="-700" data-z="-1" data-rotate-y="180" class="step slide">
+          <div class="center middle">
+            <h2>Generated <strong>HTML</strong> from Jade</h2>
+            <pre class="brush: html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+  &lt;title&gt;Jade&lt;/title&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    if (foo) {
+      bar();
+    }
+  &lt;/script&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Jade - node template engine&lt;/h1&gt;
+    &lt;div id=&quot;container&quot;&gt;
+      &lt;p&gt;You are amazing&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+          </div>
+        </div>
+        <div id="coffee" data-x="10000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <h2>Example <strong>Coffeescript</strong> Code</h2>
+            <p>Javascript replacement</p>
+          </div>
+        </div>
+        <div id="coffee-example" data-x="10000" data-y="-700" class="step slide">
+          <div class="center middle">
+            <h2>Example <strong>CoffeeScript</strong> code</h2>
+            <pre class="brush: coffee">square = (x) -&gt; x * x
+cube = (x) -&gt; square(x) * x</pre>
+          </div>
+        </div>
+        <div id="coffee-compiled" data-x="10000" data-y="-700" data-z="-1" data-rotate-y="180" class="step slide">
+          <div class="center middle">
+            <h2>Generated <strong>Javascript</strong> from CoffeeScript</h2>
+            <pre class="brush: coffee">var cube, square;
+square = function(x) {
+  return x * x;
+}
+cube = function(x) {
+  return square(x) * x;
+};</pre>
+          </div>
+        </div>
+        <div id="tools" data-x="11000" data-y="-1500" class="step slide">
+          <div class="center middle">
+            <h2>Tools</h2>
+            <div style="text-align:left;padding:0 40px 0 40px;">
+              <p>There are a lot of <strong>tools</strong> to choose from:</p>
+              <p><a href="http://incident57.com/codekit/">Codekit</a> (Mac OSX only)</p>
+              <p><a href="http://fireapp.handlino.com">Fire.app</a> (Cross-Platform)</p>
+              <p><a href="http://middlemanapp.com">Middleman</a> (Static Site Framework made in Ruby)</p>
+              <p><a href="http://www.mindscapehq.com/products/web-workbench">Web Workbench</a> (Visual Studio extension)</p>
+              <p><a href="https://github.com/xpaulbettsx/SassAndCoffee">SassAndCoffee</a> (for .NET available via NuGet)</p>
+            </div>
+          </div>
+        </div>
+        <div id="demos" data-x="11800" data-y="-1500" data-z="-100" data-rotate-y="50" data-rotate-x="-20" class="step hidden slide">
+          <div class="center middle">
+            <q> <strong style="font-size:200px;">DEMOS!?</strong></q>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jmpress.min.js"></script>
+    <script type="text/javascript">$('#impress').jmpress();</script>
+    <link rel="stylesheet" type="text/css" href="css/shCore.css">
+    <link rel="stylesheet" type="text/css" href="css/shThemeDefault.css">
+    <script type="text/javascript" src="js/shCore.js"></script>
+    <script type="text/javascript" src="js/shBrushSass.js"></script>
+    <script type="text/javascript" src="js/shBrushXml.js"></script>
+    <script type="text/javascript" src="js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/shBrushCoffeeScript.js"></script>
+    <script type="text/javascript" src="js/shBrushPlain.js"></script>
+    <script type="text/javascript" src="js/shBrushCss.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
+  </body>
+</html>
